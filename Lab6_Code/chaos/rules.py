@@ -47,7 +47,7 @@ class Avoid(Rule):
         self.offset = offset
 
     def choices(self, k, current):
-        # 3. every index from 0 to k - 1 except the one ruled out,
+        # 3. every index from 0 to k - 1 except the one ruled out
         #    (current + self.offset) % k
         return [i for i in range(k) if i != (current + self.offset) % k]
 
