@@ -2,12 +2,12 @@
 
 My Answers to the questions : 
 
-(a) With Rule(), any vertex can come next, so every spot in the square gets reached and it fills in. NotSame() bans picking the same vertex twice in a row, so some spots can never be reached. 
+a) With Rule(), any vertex can come next, so every spot in the square gets reached and it fills in. NotSame() bans picking the same vertex twice in a row, so some spots can never be reached. 
 Those empty spots repeat at smaller and smaller sizes, and that pattern of holes is the fractal.
 
-(b) play just calls self.rule.choices(...). Each rule class has its own version of choices, and Python runs the one that matches the rule the game was given.
+b) play just calls self.rule.choices(...). Each rule class has its own version of choices, and Python runs the one that matches the rule the game was given.
 
-(c) chaos/__init__.py has the line from .rules import NotSame. Importing chaos runs that fole, so NotSame becomes available straight from chaos."""
+c) chaos/__init__.py has the line from .rules import NotSame. Importing chaos runs that fole, so NotSame becomes available straight from chaos."""
 
 import numpy as np
 from .rules import Rule
